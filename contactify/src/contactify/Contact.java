@@ -1,13 +1,16 @@
 package contactify;
 
+
+//Contact class model
 public class Contact {
 
-	Integer contact_id;
+	int contact_id;
 	String first_name;
 	String last_name;
 	String zip_code;
 	
 	
+	//Contact constructor
 	public Contact(Integer contact_id, String first_name, String last_name, String zip_code) {
 		super();
 		this.contact_id = contact_id;
@@ -16,37 +19,31 @@ public class Contact {
 		this.zip_code = zip_code;
 	}
 	
-	public Contact(Integer contact_id, String first_name) {
-		this.contact_id = contact_id;
-		this.first_name = first_name;
-	}
+ 
 	
-	
-	public Integer getContact_id() {
+	//Getters and setter
+	public Integer getContactId() {
 		return contact_id;
 	}
-	public void setContact_id(Integer contact_id) {
+	public void setContactId(Integer contact_id) {
 		this.contact_id = contact_id;
 	}
-	public String getFirst_name() {
+	public String getFirstName() {
 		return first_name;
 	}
-	public void setFirst_name(String first_name) {
+	public void setFirstName(String first_name) {
 		this.first_name = first_name;
 	}
-	public String getLast_name() {
+	public String getLastName() {
 		return last_name;
 	}
-	public void setLast_name(String last_name) {
+	public void setLastName(String last_name) {
 		this.last_name = last_name;
 	}
-	public String getZip_code() {
+	public String getZipCode() {
 		return zip_code;
 	}
-	public void setZip_code(String zip_code) {
+	public void setZipCode(String zip_code) {
 		this.zip_code = zip_code;
 	}
-	
-	
-	
 }
